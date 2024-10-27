@@ -1,0 +1,14 @@
+<EntityDescriptor entityID="https://mock-idp.example.com/saml">
+  <IDPSSODescriptor>
+    <SingleSignOnService 
+      Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" 
+      Location="https://mock-idp.example.com/sso"/>
+    <KeyDescriptor use="signing">
+      <KeyInfo>
+        <X509Data>
+          <X509Certificate>MIIC...AB</X509Certificate>
+        </X509Data>
+      </KeyInfo>
+    </KeyDescriptor>
+  </IDPSSODescriptor>
+</EntityDescriptor>
